@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Pharaoh's Legacy - Ancient Egyptian Art Gallery</title>
+    <title>The Pharaoh's Legacy - Encyclopedia & Graphics</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,16 +29,16 @@
         </div>
 
         <nav class="gallery-filters" id="gallery-filters">
-          <button class="filter-btn active" data-filter="all">
+          <button class="filter-btn">
             <a href="index.html">Gallery</a>
           </button>
-          <button class="filter-btn" data-filter="character">
+          <button class="filter-btn">
             <a href="character.html">Character</a>
           </button>
-          <button class="filter-btn" data-filter="environment">
+          <button class="filter-btn">
             <a href="throne.html">Throne Room</a>
           </button>
-          <button class="filter-btn" data-filter="graphic">
+          <button class="filter-btn active" data-filter="graphic">
             <a href="encyclopedia.html">Encyclopedia</a>
           </button>
         </nav>
@@ -46,57 +46,28 @@
     </header>
 
     <main class="main-content">
-      <div class="gallery-grid">
-        <!-- Item 1: Pharaoh Rameses II -->
-        <article class="gallery-card" data-category="character">
-          <div class="card-image-wrapper">
-            <img
-              src="images/remesses front.png"
-              onerror="this.src='https://images.unsplash.com/photo-1608155686393-8fdd966d784d?auto=format&fit=crop&w=800&q=80'; this.onerror=null;"
-              alt="Pharaoh Rameses II Character Study"
-              referrerPolicy="no-referrer"
-            />
-          </div>
-          <div class="card-content">
-            <span class="card-category">Character Study</span>
-            <h2 class="card-title">Pharaoh Rameses II Turnaround</h2>
-            <p class="card-description">
-              A detailed turnaround and anatomical study of Pharaoh Rameses II, combining traditional regal vestments with hand-crafted digital elements.
-            </p>
-          </div>
-        </article>
+      <div style="text-align: center; margin-bottom: 2.5rem;">
+        <h2 style="font-family: var(--font-serif); font-size: 1.75rem; color: var(--gold-primary); letter-spacing: 0.1em; margin-bottom: 0.5rem;">GRAPHIC DESIGN &amp; PUBLICATIONS</h2>
+        <p style="font-family: var(--font-cursive); font-size: 1.1rem; color: var(--text-muted); font-style: italic;">Mockups, prints, and editorial campaign designs for the archives of Kemet.</p>
+        <p style="font-size: 0.75rem; color: var(--gold-primary); font-family: var(--font-serif); margin-top: 1rem; letter-spacing: 0.1em;">
+          [ CLICK ANY IMAGE THUMBNAIL TO OPEN HIGH RESOLUTION MODAL ]
+        </p>
+      </div>
 
-        <!-- Item 2: Throne Room of Audience -->
-        <article class="gallery-card" data-category="environment">
-          <div class="card-image-wrapper">
-            <img
-              src="images/THROWWWWNNA.png"
-              onerror="this.src='https://images.unsplash.com/photo-1543157145-f78b636d023d?auto=format&fit=crop&w=800&q=80'; this.onerror=null;"
-              alt="The Throne Room of Audience"
-              referrerPolicy="no-referrer"
-            />
-          </div>
-          <div class="card-content">
-            <span class="card-category">Environment Design</span>
-            <h2 class="card-title">The Golden Audience Hall</h2>
-            <p class="card-description">
-              The grand throne room environment crafted in classic symmetrical perspective, organizing royal columns and sacred relics flanking the throne.
-            </p>
-          </div>
-        </article>
-
-        <!-- Item 3: Encyclopaedia of Ancient Egypt -->
-        <article class="gallery-card" data-category="graphic">
+      <div class="gallery-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem;">
+        <!-- Card 1: Encyclopaedia Cover Layout -->
+        <article class="gallery-card">
           <div class="card-image-wrapper">
             <img
               src="images/Untitled-4-03.png"
               onerror="this.src='https://images.unsplash.com/photo-1600577916048-804c9191e36c?auto=format&fit=crop&w=800&q=80'; this.onerror=null;"
-              alt="Encyclopaedia of Ancient Egypt Cover"
+              alt="Encyclopaedia Cover Layout"
+              class="modal-trigger"
               referrerPolicy="no-referrer"
             />
           </div>
           <div class="card-content">
-            <span class="card-category">Graphic & Cover Art</span>
+            <span class="card-category">Graphic &amp; Cover Art</span>
             <h2 class="card-title">Encyclopaedia Cover Layout</h2>
             <p class="card-description">
               A premium cover mockup featuring balanced hieroglyphic margins, structured typography hierarchy, and a central golden Nemes headdress motif.
@@ -104,18 +75,19 @@
           </div>
         </article>
 
-        <!-- Item 4: Pyramids Campaign -->
-        <article class="gallery-card" data-category="graphic">
+        <!-- Card 2: Pyramids Starry Sky Campaign -->
+        <article class="gallery-card">
           <div class="card-image-wrapper">
             <img
               src="images/Untitled-4-02.png"
               onerror="this.src='https://images.unsplash.com/photo-1503177119275-0aa32b31d468?auto=format&fit=crop&w=800&q=80'; this.onerror=null;"
               alt="Pyramids Starry Sky Campaign"
+              class="modal-trigger"
               referrerPolicy="no-referrer"
             />
           </div>
           <div class="card-content">
-            <span class="card-category">Graphic & Print</span>
+            <span class="card-category">Graphic &amp; Print</span>
             <h2 class="card-title">Pyramids Starry Sky Campaign</h2>
             <p class="card-description">
               Promotional presentation poster depicting the iconic pyramids of Giza resting beneath an atmospheric, celestial stellar background.
@@ -123,18 +95,19 @@
           </div>
         </article>
 
-        <!-- Item 5: Nile Sphinx Silhouette -->
-        <article class="gallery-card" data-category="graphic">
+        <!-- Card 3: Nile Sphinx Silhouette -->
+        <article class="gallery-card">
           <div class="card-image-wrapper">
             <img
               src="images/Untitled-4-05.png"
               onerror="this.src='https://images.unsplash.com/photo-1539650116574-8efeb43e2750?auto=format&fit=crop&w=800&q=80'; this.onerror=null;"
               alt="Nile Sphinx Silhouette Expo"
+              class="modal-trigger"
               referrerPolicy="no-referrer"
             />
           </div>
           <div class="card-content">
-            <span class="card-category">Graphic & Print</span>
+            <span class="card-category">Graphic &amp; Print</span>
             <h2 class="card-title">Nile Sphinx Silhouette</h2>
             <p class="card-description">
               Atmospheric campaign graphics showcasing the Great Sphinx of Giza aligned gracefully against the golden horizon of Kemet.
@@ -142,18 +115,19 @@
           </div>
         </article>
 
-        <!-- Item 6: Pharaoh Rameses Warrior Edition -->
-        <article class="gallery-card" data-category="graphic">
+        <!-- Card 4: Rameses Warrior Poster -->
+        <article class="gallery-card">
           <div class="card-image-wrapper">
             <img
               src="images/Untitled-4-07.png"
               onerror="this.src='https://images.unsplash.com/photo-1568289463675-15c3f1d24894?auto=format&fit=crop&w=800&q=80'; this.onerror=null;"
-              alt="Pharaoh Rameses Warrior Edition"
+              alt="Rameses Warrior Poster"
+              class="modal-trigger"
               referrerPolicy="no-referrer"
             />
           </div>
           <div class="card-content">
-            <span class="card-category">Graphic & Print</span>
+            <span class="card-category">Graphic &amp; Print</span>
             <h2 class="card-title">Rameses Warrior Poster</h2>
             <p class="card-description">
               A high-impact commemorative layout overlaying the pharaoh's royal profile with bold presentation lettering.
@@ -162,6 +136,12 @@
         </article>
       </div>
     </main>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImg" alt="Enlarged Publication View" />
+    </div>
 
     <footer class="main-footer">
       <p>&copy; 2026 The Pharaoh's Legacy. All rights reserved.</p>

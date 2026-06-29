@@ -4,19 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Pharaoh's Legacy - Egyptian Art Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
   </head>
-  <body>
-    <header class="main-header" style="padding: 0 25vw 0 35vw;">
-      <div class="header-container">
+  <body style="opacity: 100%">
+    <header
+      class="main-header"
+      style="
+        position: absolute;
+        width: 100%;
+        background: transparent;
+        border-bottom: none;
+        z-index: 10;
+      "
+    >
+      <div
+        class="header-container"
+        style="justify-content: center; padding: 2.5rem 1.5rem"
+      >
         <div class="brand-group">
           <div class="logo-box">
             <span class="logo-text"
-              ><a
-                href="Landing.html"
-                style="text-decoration: none; color: white"
-                >A.E</a
-              ></span
+              ><a href="Landing.html" class="logo-link">A.E</a></span
             >
           </div>
           <div class="title-meta">
@@ -24,19 +32,40 @@
             <p class="sub-title">ANCIENT EGYPTIAN ART GALLERY</p>
           </div>
         </div>
+      </div>
     </header>
-<section id="body" style=" height:100vh; overflow-y: none;">
 
-  <div class="video-container">
+    <main class="video-container">
+      <video autoplay muted loop playsinline class="background-video">
+        <source src="images/cover page.mp4" type="video/mp4" />
+        <source
+          src="https://assets.mixkit.co/videos/preview/mixkit-glowing-gold-particles-dust-loop-background-40545-large.mp4"
+          type="video/mp4"
+        />
+      </video>
 
- <video autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline" class="background-video">
-  <source src="images/cover page.mp4" type="video/mp4">
-</video>
+      <div class="landing-overlay">
+        <div class="landing-content">
+          <h1 class="landing-title">
+            WELCOME TO THE ONLINE ANCIENT EGYPTIAN GALLERY
+          </h1>
+          <p class="landing-desc">
+            Journey back to the sacred lands of Kemet. Witness a premium
+            showcase of hand-crafted digital character studies, symmetrical
+            architectural perspectives, and royal hieroglyphic publications.
+          </p>
+          <div style="margin-top: 1.5rem">
+            <a
+              href="index.html"
+              class="get-started-btn"
+              style="border-radius: 2vh"
+              >GET STARTED</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
 
-  <div style="width: 45vw; display: grid; margin: 30vh 0 0 60vh;"><h1>Welcome to the online Ancient Egyptian Art GAllery</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam tenetur fugit sint unde temporibus consectetur aliquid. Pariatur atque perferendis nulla voluptates quam quibusdam repellendus tenetur. Voluptates voluptatibus similique dolor veniam!</p></div>
-  <div id="get-started" style="border: 1px solid white; border-radius: 1vw ;max-width: 8vw;  ; margin: 35vh 0 0 45vw; animation: bounce 3s infinite ; "><a href="index.html" style="text-decoration: none; height: 5vh; color: aliceblue; padding: 2vh 2vh 2vh 2vh;">GET STARTED</a></div>
-</section>
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
   </body>
 </html>
